@@ -49,13 +49,16 @@
     <Compile Include="LamdaConversion.cs" />
     <Compile Include="LyncConversion.cs" />
     <Compile Include="OnLineTests\FindingPatternInSequence.cs" />
+    <Compile Include="OnLineTests\FindMaxPossibleInt.cs" />
     <Compile Include="OnLineTests\GetDigitsFromNumber.cs" />
+    <Compile Include="OnLineTests\HackerRankTests.cs" />
+    <Compile Include="OnLineTests\ReArrangeGetLargestNumber.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicAccessVerify.cs" />
     <Compile Include="ReverseProgram.cs" />
-    <Compile Include="SmallestPositive.cs" />
+    <Compile Include="OnLineTests\SmallestPositive.cs" />
     <Compile Include="StackHeapTest.cs" />
     <Compile Include="StringExtension.cs" />
     <Compile Include="TestEventHandler.cs" />

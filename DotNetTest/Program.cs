@@ -9,115 +9,35 @@ namespace DotNetTest
 {
     class Program
     {
-       
-        static  int solution1(int N)
-        {
-
-            //// write your code in C# 6.0 with .NET 4.5 (Mono)
-            //int insertingDigit = 5;
-            //int flag = N >= 0 ? 1 : -1;
-            ////N = Math.Abs(N);
-            //int maxValue = 0;
-
-            //int result = 0;
-            //List<int> inDigits = GetDigits(N);
-            //int multiplier = 1;
-            //if (inDigits.Count() == 0) inDigits.Add(0);
-            //if (N >= 0)
-            //{
-            //    for (int i = 0; i <= inDigits.Count(); i++)
-            //    {
-            //        StringBuilder sb = new StringBuilder();
-            //        for (int j = 0; j < inDigits.Count(); j++)
-            //        {
-            //            if (i == j) sb.Append(insertingDigit.ToString());
-            //            sb.Append(inDigits[j].ToString());
-            //        }
-
-            //        if (i == inDigits.Count()) sb.Append(insertingDigit.ToString());
-            //        result = Int32.Parse(sb.ToString());
-            //        if (result > maxValue) maxValue = result;
-            //    }
-            //}
-
-            //return maxValue;
-            // write your code here
-            StringBuilder sb = new StringBuilder(Math.Abs(N).ToString());
-            int flag = N >= 0 ? 1 : -1;
-            if (N >= 0)
-            {
-                int idx = 0;
-                while (idx < sb.Length && (Int32.Parse(sb[idx].ToString()) - 0) >= 5)
-                {
-                    idx++;
-                }
-                sb.Append(5);
-            }
-            else
-            {
-                int idx = 0;
-                while (idx < sb.Length && (Int32.Parse(sb[idx].ToString()) - 0) <= 5)
-                    idx++;
-                sb.Append(5);
-            }
-            int val = Int32.Parse(sb.ToString());
-            return flag * val;
-        }
-       
-        static int MaximumPossible(int num)
-        {
-            // digit to insert in given number
-            int digit = 5;
-
-            // edge case
-            if (num == 0)
-            {
-                return digit * 10;
-            }
-
-            // -1 if num is negative number else 1
-            int negative = num / Math.Abs(num);
-            // get the absolute value of given number
-            num = Math.Abs(num);
-            int n = num;
-            // maximum number obtained after inserting digit.
-            int maxVal = int.MinValue;
-            int counter = 0;
-            int position = 1;
-
-            // count the number of digits in the given number.
-            while (n > 0)
-            {
-                counter++;
-                n = n / 10;
-            }
-
-            // loop to place digit at every possible position in the number,
-            // and check the obtained value.
-            for (int i = 0; i <= counter; i++)
-            {
-                int newVal = ((num / position) * (position * 10)) + (digit * position) + (num % position);
-
-                // if new value is greater the maxVal
-                if (newVal * negative > maxVal)
-                {
-                    maxVal = newVal * negative;
-                }
-
-                position = position * 10;
-            }
-
-            return maxVal;
-        }
 
         static void Main(string[] args)
         {
-            //int res = solution1(268);
-            //int res1 = solution1(670);
-            //int res2 = solution1(0);
-            //int res3 = solution1(-999);
-            int res22 = getBinaryPeriodForIntAsinCodility(955);
-            Console.WriteLine(res22);
+            int n = Int32.Parse(Console.ReadLine());
+            Dictionary<String, int> dict = new Dictionary<String, int>();
+
+            for (int j = 0; j < n; j++)
+            {
+                string[] sTemp = Console.ReadLine().Split(' ');
+                dict.Add(sTemp[0], Int32.Parse(sTemp[1]));
+            }
+
+            // perform queries
+            string queryKey;
+            while ((queryKey = Console.ReadLine()) != null)
+            {
+                           }
+
+            //int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
+
+            // OnLineTests.ReArrangeGetLargestNumber.GetLargetNumberOld(54572);
+            //int res = OnLineTests.FindMaxPossibleInt.MaxPossible(268);
+            //int res3 = OnLineTests.FindMaxPossibleInt.MaxPossible(-999);
+            //for (int i = 1; i <= 100; i++)
+            //{
+            //    int res22 = OnLineTests.FindingPatternInSequence.getBinaryPeriodForIntAsinCodility(i);
+            //    if (res22 == -1)
+            //        Console.WriteLine(res22);
+            //}
 
             //DelegateTest d = new DelegateTest();
             //d.DoAsyncOperation();

@@ -8,7 +8,7 @@ namespace DotNetTest.OnLineTests
 {
     class GetDigitsFromNumber
     {
-        static List<int> GetDigits(int input)
+        public static List<int> GetDigits(int input)
         {
             List<int> ret = new List<int>();
             while (input > 0)
@@ -19,6 +19,17 @@ namespace DotNetTest.OnLineTests
             }
             ret.Reverse();
             return ret;
+        }
+    }
+
+    class GenericTest
+    {
+        public static void PrintArray<T>(T[] @param)
+        {
+            for (int i = 0; i < @param.Length; i++)
+            {
+                Console.WriteLine(@param[i]);
+            };
         }
     }
 }

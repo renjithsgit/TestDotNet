@@ -12,22 +12,34 @@ namespace DotNetTest
 
         static void Main(string[] args)
         {
-            int n = Int32.Parse(Console.ReadLine());
-            Dictionary<String, int> dict = new Dictionary<String, int>();
+            new CSharpNewFeatures().CheckNewFeatures();
 
-            for (int j = 0; j < n; j++)
+            int[][] arr = new int[6][];
+
+            for (int i = 0; i < 6; i++)
             {
-                string[] sTemp = Console.ReadLine().Split(' ');
-                dict.Add(sTemp[0], Int32.Parse(sTemp[1]));
+                arr[i] = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
+
             }
+            OnLineTests.HackerRankTests h = new OnLineTests.HackerRankTests();
+            int res = h.findMaxSum(arr); Console.WriteLine(res);
 
-            // perform queries
-            string queryKey;
-            while ((queryKey = Console.ReadLine()) != null)
-            {
-                           }
+            //int n = Int32.Parse(Console.ReadLine());
+            //Dictionary<String, int> dict = new Dictionary<String, int>();
 
-            //int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
+            //for (int j = 0; j < n; j++)
+            //{
+            //    string[] sTemp = Console.ReadLine().Split(' ');
+            //    dict.Add(sTemp[0], Int32.Parse(sTemp[1]));
+            //}
+
+            //// perform queries
+            //string queryKey;
+            //while ((queryKey = Console.ReadLine()) != null)
+            //{
+            //               }
+
+           //int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
 
             // OnLineTests.ReArrangeGetLargestNumber.GetLargetNumberOld(54572);
             //int res = OnLineTests.FindMaxPossibleInt.MaxPossible(268);

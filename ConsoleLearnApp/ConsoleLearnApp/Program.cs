@@ -10,6 +10,8 @@ namespace ConsoleLearnApp
     {
         static void Main(string[] args)
         {
+
+            IsNullEmtyTest.CanIsNullOrEmptyHndleSpace();
             //CanAddNullToCollection.CreateAStringCollectionAndCheckNull();
 
             //EnumIsDefinedTest.TestForEnumWithOperator();
@@ -18,7 +20,7 @@ namespace ConsoleLearnApp
 
             ////various methods in enumerable
             //EnumerableLyncFunctions.AggreageteTest();
-            EnumerableWhereClause.WhereTest();
+            //EnumerableWhereClause.WhereTest();
         }
     }
 }

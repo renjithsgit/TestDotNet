@@ -13,7 +13,9 @@ namespace ConsoleLearnApp
         {
             var s = new List<string>(){"aaaa","bbbb"};
             var ss = AddNullToCollection(s);
-            Console.WriteLine(ss.Count());
+            Console.WriteLine("count : " + ss.Count());
+
+            //Yes we can add null to string collection.
         }
 
         public static IEnumerable<string> AddNullToCollection(IReadOnlyCollection<string> stringCollection)

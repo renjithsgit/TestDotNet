@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDTest", "DDDTest\DDDTest.csproj", "{09BC6A93-D246-4559-88FE-D0DFB3509A03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDTest.Order.Domain", "DDDTest.Order.Domain\DDDTest.Order.Domain.csproj", "{894503AB-D885-43CE-A1C7-B03F38585123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09BC6A93-D246-4559-88FE-D0DFB3509A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BC6A93-D246-4559-88FE-D0DFB3509A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BC6A93-D246-4559-88FE-D0DFB3509A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BC6A93-D246-4559-88FE-D0DFB3509A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{894503AB-D885-43CE-A1C7-B03F38585123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894503AB-D885-43CE-A1C7-B03F38585123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894503AB-D885-43CE-A1C7-B03F38585123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894503AB-D885-43CE-A1C7-B03F38585123}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC066057-9437-4D87-BC0B-B0BDF1FEB2AA}
+	EndGlobalSection
+EndGlobal
